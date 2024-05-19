@@ -1,0 +1,580 @@
+@import url(./fonts.css);
+
+/* CUSTOM PROPS */
+
+:root {
+    --Midnight-Green: #014E56;
+    --Light-Coral: #F67E7E;
+    --white: #fff;
+    --Rapture-Blue: #79C8C7;
+    --Police-Blue: #2C6269;
+    --Deep-Jungle-Green: #004047;
+    --Sacramento-State-Green: #012F34;
+    --Dark-Green: #002529;
+    --Livvic: "Livvic";
+}
+
+/* //CUSTOM PROPS */
+
+/* GLOBAL STYLES */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* //GLOBAL STYLES */
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1140px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+/* //CONTAINER */
+
+/* BTN */
+
+.all-btn {
+    padding: 10px 33px;
+    background-color: transparent;
+    border-radius: 24px;
+    border: 2px solid #FFF;
+    color: var(--white);
+    font-family: var(--Livvic);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.all-btn:hover {
+    background-color: var(--white);
+    color: var(--Dark-Green);
+    transition: .5s;
+}
+
+.all-btn:active {
+    opacity: 0.25;
+    background-color: transparent;
+    color: var(--white);
+    font-family: var(--Livvic);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    transition: .4s;
+}
+
+.mobil-menu__btn {
+    display: none;
+    /* position: absolute; */
+}
+
+.header-menu__icon {
+    transform: scale(0);
+    position: absolute;
+}
+
+/* //BTN */
+
+
+/* SIRE-HEADER */
+.site-header-hero {
+    background-color: var(--Midnight-Green);
+}
+
+.site-header {
+    width: 100%;
+    padding-top: 77px;
+}
+
+.header-flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 80px;
+}
+
+.site-header__list {
+    display: flex;
+    column-gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-link {
+    color: var(--white);
+    font-family: var(--Livvic);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    transition: .5s;
+}
+
+.list-link:hover {
+    color: var(--Light-Coral);
+}
+
+/* //SIRE-HEADER */
+
+
+/* SITE-HERO */
+
+.site-hero {
+    width: 100%;
+    padding-top: 125px;
+    padding-bottom: 250px;
+    position: relative;
+}
+
+.site-hero::before {
+    content: url(../img/bg-pattern-home-1.svg);
+    display: block;
+    position: absolute;
+    top: 125px;
+    left: -100px;
+}
+
+.site-hero::after {
+    content: url(../img/bg-pattern-home-2.svg);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 165px;
+}
+
+.hero-flex {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.hero-title {
+    max-width: 620px;
+    width: 100%;
+    color: var(--white);
+    font-family: var(--Livvic);
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 100px;
+}
+
+.hero-mark {
+    color: var(--Light-Coral);
+}
+
+.hero-desc {
+    max-width: 445px;
+    width: 100%;
+    padding-top: 79px;
+    color: var(--white);
+    font-family: var(--Livvic);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    position: relative;
+}
+
+.hero-desc::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: var(--Rapture-Blue);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* //SITE-HERO */
+
+
+/* OFFER SECTION */
+.offer {
+    background-color: var(--Sacramento-State-Green);
+    padding: 140px 0px;
+    position: relative;
+}
+
+.offer::after {
+    content: url(../img/bg-pattern-home-3.svg);
+    position: absolute;
+    right: -100px;
+    bottom: 0;
+}
+
+.offer-flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.offer-desc {
+    padding-top: 54px;
+    max-width: 430px;
+    width: 100%;
+    color: var(--white);
+    font-family: var(--Livvic);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    position: relative;
+}
+
+.offer-desc::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: var(--Light-Coral);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.offer-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+.offer-box__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 23px;
+}
+
+.offer-box__desc {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.offer-box__title {
+    color: var(--Light-Coral);
+    font-family: var(--Livvic);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.offer-box__text {
+    max-width: 440px;
+    width: 100%;
+    color: var(--white);
+    font-family: var(--Livvic);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+/* //OFFER SECTION */
+
+
+/* SERVICE SECTION */
+
+.service {
+    width: 100%;
+    padding-top: 140px;
+    padding-bottom: 150px;
+    background-color: var(--Deep-Jungle-Green);
+    position: relative;
+}
+
+.service::before {
+    content: url(../img/bg-pattern-home-4-about-3.svg);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.service::after {
+    content: url(../img/bg-pattern-about-2-contact-1.svg);
+    position: absolute;
+    right: 0;
+    bottom: -100px;
+    /* height: 200px;
+    overflow-y: hidden; */
+}
+
+.service-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 56px;
+}
+
+.service-title {
+    max-width: 932px;
+    width: 100%;
+    color: var(--white);
+    text-align: center;
+    font-family: var(--Livvic);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.service-mark {
+    color: var(--Rapture-Blue);
+}
+
+.service-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    padding-top: 36px;
+    padding-bottom: 11px;
+}
+
+.service-box__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 28px;
+}
+
+.service-box__text {
+    max-width: 350px;
+    width: 100%;
+    color: var(--white);
+    text-align: center;
+    font-family: var(--Livvic);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    z-index: 1;
+    position: relative;
+}
+
+.service-box__text::before {
+    content: url(../img/“.svg);
+    position: absolute;
+    left: 40%;
+    top: -36px;
+    z-index: -1;
+    opacity: .75;
+}
+
+.service-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2px;
+}
+
+.service-box__title {
+    color: var(--Rapture-Blue);
+    text-align: center;
+    font-family: var(--Livvic);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.service-box__desc {
+    color: var(--white);
+    text-align: center;
+    font-family: var(--Livvic);
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.servicce-image {
+    display: block;
+    width: 62px;
+    height: 62px;
+    border-radius: 62px;
+    border: 2px solid #C4FFFE;
+
+}
+
+/* //SERVICE SECTION */
+
+
+
+/* CONTACT SECTION */
+.contact {
+    padding-top: 76px;
+    padding-bottom: 76px;
+    width: 100%;
+    background-color: var(--Light-Coral);
+    position: relative;
+}
+
+.contact::before {
+    content: url(../img/bg-pattern-home-6-about-5.svg);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.contact-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-title {
+    color: var(--Midnight-Green);
+    font-family: Livvic;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.contact-btn {
+    /* border-color: var(--Midnight-Green); */
+    color: var(--Midnight-Green);
+    border: 2px solid var(--Midnight-Green);
+}
+
+.contact-btn:hover {
+    background-color: var(--Midnight-Green);
+    color: var(--white);
+}
+
+.contact-btn:active {
+    background-color: transparent;
+    color: var(--Midnight-Green);
+}
+
+/* //CONTACT SECTION */
+
+
+
+/* FOOTER */
+.site-footer {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    width: 100%;
+    background-color: var(--Dark-Green);
+}
+
+.footer-flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.footer-data {
+    display: flex;
+    column-gap: 125px;
+    justify-content: center;
+}
+
+.footer-logo-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    justify-content: center;
+}
+
+.footer-menu {
+    display: flex;
+    column-gap: 40px;
+    align-items: center;
+}
+
+.footer-link {
+    color: var(--white);
+    font-family: Livvic;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    transition: .4s;
+}
+
+.footer-link:hover {
+    color: var(--Light-Coral);
+}
+
+.footer-desc {
+    max-width: 150px;
+    width: 100%;
+    text-align: left;
+    color: var(--white);
+    font-family: Livvic;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    opacity: .6;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    text-align: right;
+}
+
+.footer-icons {
+    display: flex;
+    column-gap: 20px;
+    justify-content: end;
+}
+
+.footer-icon__link {
+    text-align: right;
+    color: var(--white);
+    transition: .4s;
+}
+
+.footer-icon__link:hover {
+    color: var(--Light-Coral);
+}
+
+.footer-tex {
+    color: var(--white);
+    text-align: right;
+    font-family: Livvic;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    opacity: .6;
+}
+
+/* //FOOTER */

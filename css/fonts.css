@@ -1,0 +1,20 @@
+
+/* Livvic */
+
+@font-face {
+    font-family: "Livvic";
+    src: url(../Livvic/Livvic-MediumItalic.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Livvic";
+    src: url(../Livvic/Livvic-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Livvic";
+    src: url(../Livvic/Livvic-Bold.ttf);
+    font-weight: 700;
+}
